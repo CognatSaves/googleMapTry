@@ -1,0 +1,95 @@
+.routemenu_table{
+  position: absolute;
+  top:25px;
+  left:5px;
+  width: 280px;
+  height: 150px;
+  background-color: transparent;
+}
+
+.routemenu_table tbody{
+  display:block;
+  overflow:auto;
+  height:150px;
+  width:100%;
+}
+.routemenu_table thead tr{
+  display:block;
+}
+.routemenu_city_add_button{
+  position: absolute;
+  top:185px;
+  left:5px;
+  height: 20px;
+  width: 20px;
+}
+.routemenu_city_add_text{
+  position: absolute;
+  font-size: 12px;
+  top:184px;
+  left:30px;
+  height: 20px;
+  text-align: left;
+}
+.routemenu_calendary{
+  position: absolute;
+  top:215px;
+  left:5px;
+  height: 20px;
+  width: 20px;
+  text-align: center;
+}
+.routemenu_date{
+  position: absolute;
+  top:215px;
+  left:30px;
+  height: 20px;
+  text-align: left;
+  border-width: 0 0 1px;
+  border-color: white;
+  color:white;
+  background-color: transparent;
+
+}
+::-webkit-input-placeholder {
+  color: white;
+
+}
+.routemenu_parameters{
+  position: absolute;
+  top:250px;
+  width: 300px;
+  height: 30px;
+  text-align: center;
+  background-color: rgba(196, 205, 224, 0.11);
+  color:white;
+  border: none;
+  font-size: 0.8em;
+}
+.routemenu_search{
+  position:absolute;
+  top: 300px;
+  height: 40px;
+  text-align: center;
+  background-color: orange;
+  width:200px;
+  border: none;
+  left:50px;
+  color:white;
+
+}
+.routemenu_comment{
+  position:absolute;
+  top:345px;
+  width: 300px;
+  text-align: center;
+  font-size: 0.5em;
+}
+.city_input{
+  outline: 0;
+  border-width: 0 0 1px;
+  border-color: white;
+  background-color: transparent;
+  color:white;
+  font-size:1em;
+}

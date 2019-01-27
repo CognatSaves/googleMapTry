@@ -1,0 +1,13 @@
+.drivers_window{
+  position:absolute;
+  top:0px;
+  left:0px;
+  margin: 0 25% 0 25%;
+}
+.drivers_header{
+  position:absolute;
+  top:15px;
+  width:800px;
+  height:45px;
+  background-color: white;
+}

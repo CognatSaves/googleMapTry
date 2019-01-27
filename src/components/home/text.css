@@ -1,0 +1,16 @@
+.text_firstLine{
+  position:absolute;
+  top:20px;
+  font-size: 32px;
+  left:10px;
+  right: 10px;
+  text-align: center;
+}
+.text_secondLine{
+  position: absolute;
+  top:65px;
+  font-size:13px;
+  left:10px;
+  right: 10px;
+  text-align: center;
+}

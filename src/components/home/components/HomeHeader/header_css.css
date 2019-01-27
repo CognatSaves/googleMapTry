@@ -1,0 +1,70 @@
+.header_label {
+  position:absolute;
+  top:0px;
+  left:0px;
+  width: 160px;
+  height:100%;
+  background-color: antiquewhite;
+}
+.header_geo_emblem{
+  position:absolute;
+  text-align: center;
+  top:0px;
+  left:165px;
+  width:35px;
+  height: 100%;
+  background-color: azure;
+}
+
+.header_geo_button{
+  position:absolute;
+  text-align: center;
+  top:5px;
+  left:240px;
+  width: 60px;
+  height: 35px;
+
+}
+
+.header_buttonMass{
+  position:absolute;
+  text-align: center;
+  top:5px;
+  right: 300px;
+}
+.buttonMass_button{
+  top:0px;
+  right: 5px;
+  height: 35px;
+  border: none;
+  background-color: transparent;
+  font-size: 0.75em;
+  font-weight: bold;
+}
+.header_currency{
+  position:absolute;
+  text-align: center;
+  top:5px;
+  right:225px;
+  width: 60px;
+  height: 35px;
+}
+.header_language{
+  position:absolute;
+  text-align: center;
+  top:5px;
+  right: 165px;
+  height: 35px;
+  width: 55px;
+}
+.header_registration{
+  position:absolute;
+  text-align: center;
+  top:5px;
+  right: 0px;
+  height: 35px;
+  width: 160px;
+  font-size: 0.75em;
+  color:black;
+  border-color: black;
+}

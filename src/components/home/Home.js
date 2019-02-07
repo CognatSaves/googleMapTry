@@ -16,7 +16,7 @@ export default class Home extends React.Component {
           <HomeHeader/>
         </div>
         <div className="home_text">
-          <div className="text_firstLine">СПЛАНИРУЙТЕ СВОЮ ЭКСКУРСИЮ</div>
+          <div className="text_firstLine">спланируйте свою экскурсию</div>
           <div className="text_secondLine">Предложения от местных гидов-водителей по вашему индивидуальному маршруту</div>
         </div>
         <div className="home_body">

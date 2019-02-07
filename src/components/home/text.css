@@ -1,16 +1,23 @@
 .text_firstLine{
   position:absolute;
-  top:20px;
-  font-size: 32px;
+  top:70px;
+
   left:10px;
   right: 10px;
   text-align: center;
+
+  font-size: 46px;
+  color:#304269;
+  font-family: "Roboto Bold";
+  text-transform: uppercase;
 }
 .text_secondLine{
   position: absolute;
-  top:65px;
-  font-size:13px;
+  top:125px;
+  font-size:18px;
   left:10px;
   right: 10px;
   text-align: center;
+  font-family: "Roboto Regular";
+  color:#304269;
 }

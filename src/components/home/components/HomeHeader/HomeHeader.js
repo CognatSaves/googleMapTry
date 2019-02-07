@@ -8,14 +8,13 @@ export default class HomeHeader extends React.Component {
   render(){
     return(
       <React.Fragment>
-        <div className="header_label">Label place</div>
-        <div className="header_geo_emblem">Emblem</div>
+        <div className="header_label"></div>
+        <div className="header_geo_emblem"></div>
 
-        <div className="dropdown">
-          <a className="btn btn-secondary dropdown-toggle header_geo_button" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            GEO
-          </a>
-        </div>
+
+        <button className="header_geo_button">
+
+        </button>
 
         <div className="header_buttonMass">
           <button className="buttonMass_button">МЕСТА</button>
@@ -24,18 +23,19 @@ export default class HomeHeader extends React.Component {
           <button className="buttonMass_button">АВИАБИЛЕТЫ</button>
         </div>
 
+        <button className="header_currency">
+          <div className="header_currency_value">$ USD</div>
+        </button>
+        <button className="header_language">
+          <div className="header_language_flag"/>
+          <div className="header_language_value">RU</div>
+        </button>
 
-        <div className="dropdown">
-          <a className="btn btn-secondary dropdown-toggle header_currency" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            USD
-          </a>
-        </div>
-        <div className="dropdown">
-          <a className="btn btn-secondary dropdown-toggle header_language" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            RU
-          </a>
-        </div>
-        <button className="btn btn-outline-primary header_registration" >ВОЙТИ / РЕГИСТРАЦИЯ</button>
+        <button className="header_registration">
+          <div className="header_registration_text">
+            ВОЙТИ / РЕГИСТРАЦИЯ
+          </div>
+        </button>
       </React.Fragment>
     );
   }

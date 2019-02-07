@@ -107,22 +107,64 @@ export class CurrentLocation extends React.Component {
       let directionsDisplay=new google.maps.DirectionsRenderer();
 
       service.route(request, function(response, status) {
-
-
+        console.log("status");
+        console.log(status);
+        console.log(response);
         if (status == google.maps.DirectionsStatus.OK) {
           //it must be some markers with distance, but ...
           console.log("Distance");
           for(var i=0;i<response.routes[0].legs.length; i++){
             console.log(response.routes[0].legs[i].distance.text);
           }
+          console.log("response");
+          console.log(response);
           directionsDisplay.setDirections(response);
 
         }
       });
       directionsDisplay.setMap(this.map);
 
+      var uluru = {lat: 37, lng: 55};
+      var contentString = '<div id="content" style="color: black">Help Me!</div>';;
+      var infowindow = new google.maps.InfoWindow({
+        content: contentString
+      });
+/*
+      var marker = new google.maps.Marker({
+        position: uluru,
+        map: this.map,
+        title: 'Uluru (Ayers Rock)'
+      });
+
+        infowindow.open(this.map, marker);
+*/
+      console.log("map");
+      console.log(this.map);
 
 
+
+      var geocoder = new google.maps.Geocoder();
+
+      geocoder.geocode( { address: "Москва"}, function(results, status) {
+        if (status == 'OK') {
+          console.log("geocoder result");
+          console.log(results[0].geometry.bounds);
+          var temp = results[0].geometry.bounds;
+          var posit = {lat:(temp.j.j+temp.j.l)/2, lng:(temp.l.j+temp.l.l)/2};
+          console.log(posit);
+
+          var marker = new google.maps.Marker({
+            position: uluru,
+            map: this.map,
+            title: 'Uluru (Ayers Rock)'
+          });
+
+          infowindow.open(this.map, marker);
+        } else {
+
+          alert('Geocode was not successful for the following reason: ' + status);
+        }
+      });
     }
   }
   renderChildren() {

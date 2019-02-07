@@ -1,8 +1,6 @@
 .home_window{
   position:absolute;
-  top:0px;
-  left:0px;
-  margin: 0 25% 0 25%;
+  margin: 0 15% 0 15%;
 }
 .home_background{
   position:fixed;
@@ -10,28 +8,25 @@
   left:0px;
   width:100%;
   height: 100%;
-  background-color: aquamarine;
+  background: url(home_background.png) no-repeat;
 }
 .home_header{
   position:absolute;
-  top:15px;
-  width:900px;
-  height:45px;
-  background-color: white;
+  top:34px;
+  width:1200px;
+  height:36px;
 }
 .home_text{
   position:absolute;
-  top:75px;
-  width:900px;
-  height:100px;
-  background-color: white;
-
+  top:70px;
+  width:1200px;
+  height:192px;
 }
 .home_body{
   position:absolute;
-  top:185px;
-  width:900px;
-  height:450px;
+  top:262px;
+  width:1200px;
+  height:640px;
   color: white;
-  background-color: rgba(0, 31, 180, 0.72);
+  background-color:#304269;
 }

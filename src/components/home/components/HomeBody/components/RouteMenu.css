@@ -1,55 +1,74 @@
 .routemenu_table{
   position: absolute;
   top:25px;
-  left:5px;
-  width: 280px;
-  height: 150px;
+  left:0px;
+  width: 350px;
+  height: 210px;
   background-color: transparent;
+  border-collapse:collapse;
+  border-spacing: 0px;
 }
 
 .routemenu_table tbody{
   display:block;
-  overflow:auto;
-  height:150px;
-  width:100%;
+  overflow: auto;
+  height:100%;
+  width:350px;
+  font-size: 15px;
+  color:#ffffff;
+  font-family: "Roboto Regular";
+  border-collapse:collapse;
+  border-spacing: 0px;
+
 }
 .routemenu_table thead tr{
   display:block;
+  left:0px;
+  width:300px;
+  border-collapse:collapse;
 }
 .routemenu_city_add_button{
   position: absolute;
-  top:185px;
-  left:5px;
+  top:215px;
+  left:10px;
   height: 20px;
   width: 20px;
+  background: url(da_plus_button.png) no-repeat;
 }
 .routemenu_city_add_text{
   position: absolute;
-  font-size: 12px;
-  top:184px;
-  left:30px;
+  top:214px;
+  left:40px;
   height: 20px;
   text-align: left;
+
+  font-size: 13px;
+  color:#ffffff;
+  font-family: "Roboto Light";
 }
 .routemenu_calendary{
   position: absolute;
-  top:215px;
-  left:5px;
+  top:262px;
+  left:13px;
   height: 20px;
   width: 20px;
   text-align: center;
+  background: url(da_kalendar.png) no-repeat;
 }
 .routemenu_date{
   position: absolute;
-  top:215px;
-  left:30px;
+  top:260px;
+  left:40px;
   height: 20px;
   text-align: left;
   border-width: 0 0 1px;
   border-color: white;
-  color:white;
   background-color: transparent;
+  width:265px;
 
+  font-size: 15px;
+  color:#ffffff;
+  font-family: "Roboto Regular";
 }
 ::-webkit-input-placeholder {
   color: white;
@@ -57,33 +76,68 @@
 }
 .routemenu_parameters{
   position: absolute;
-  top:250px;
-  width: 300px;
-  height: 30px;
+  display: table;
+  top:322px;
+  width: 350px;
+  height: 42px;
   text-align: center;
   background-color: rgba(196, 205, 224, 0.11);
-  color:white;
   border: none;
-  font-size: 0.8em;
+
+}
+.routemenu_parameters_text{
+  position:absolute;
+  top:10px;
+  left:40px;
+  font-size: 15px;
+  color:#ffffff;
+  font-family: "Roboto Regular";
+}
+
+.routemenu_parameters_arrow{
+  position: inherit;
+  top:4px;
+  right: 30px;
+  height: 40px;
+  width:40px;
+  background: url(da_tru_big_arrow.png) no-repeat;
 }
 .routemenu_search{
   position:absolute;
-  top: 300px;
+  top: 385px;
   height: 40px;
   text-align: center;
-  background-color: orange;
-  width:200px;
+  background-color: #f26101;
+  width:265px;
   border: none;
-  left:50px;
-  color:white;
+  left:40px;
 
+}
+.routemenu_search_loupe{
+  position: absolute;
+  top:0px;
+  left:75px;
+  width:40px;
+  height: 40px;
+  background: url(da_loupe.png) no-repeat;
+}
+.routemenu_search_text{
+  position: absolute;
+  top:8px;
+  left:120px;
+  font-size: 15px;
+  color:#ffffff;
+  font-family: "Roboto Medium";
 }
 .routemenu_comment{
   position:absolute;
-  top:345px;
-  width: 300px;
+  top:440px;
+  width: 350px;
   text-align: center;
-  font-size: 0.5em;
+
+  font-size: 11px;
+  color:#ffffff;
+  font-family: "Roboto";
 }
 .city_input{
   outline: 0;
@@ -92,4 +146,30 @@
   background-color: transparent;
   color:white;
   font-size:1em;
+  width:263px;
+}
+.dotBox{
+  position: relative;
+  width:40px;
+  height:40px;
+  background: url(da_second_dots.png) no-repeat;
+}
+.firstDotBox{
+  position:relative;
+  top:11px;
+  width:40px;
+  height:35px;
+  background: url(da_1st_dots.png) no-repeat;
+}
+.lastDotBox{
+  position:relative;
+  top:1px;
+  width:40px;
+  height:43px;
+  background: url(da_last_dots.png) no-repeat;
+}
+.crossBox{
+  width:40px;
+  height: 45px;
+  background: url(da_tru_kross.png) no-repeat;
 }

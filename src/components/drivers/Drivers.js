@@ -1,20 +1,27 @@
 import React, { Component } from 'react';
-import HomeHeader from '../home/components/HomeHeader/HomeHeader.js'
 import './Drivers.css';
+import DriversBody from './components/DriversBody/DriversBody.js';
+import DriversHeader from './components/DriversHeader/DriversHeader.js';
+import DriversRoute from './components/DriversRoute/DriversRoute.js';
+import DriversFooter from './components/DriversFooter/DriversFooter.js';
 
 export default class Drivers extends React.Component {
-  constructor(props){
-    super(props);
+    constructor(props) {
+        super(props);
 
-  }
-  render(){
-    return (
-      <div className="drivers_window">
-        <div className="drivers_header">
-          <HomeHeader/>
-        </div>
-
-      </div>
-    )
-  }
+    }
+    render() {
+        return (
+          <div>
+            <div className = "drivers_top_background" >
+              <DriversHeader/>
+              <DriversRoute/>
+            </div>
+            <div className = "drivers_bottom_background" >
+              <DriversBody/>
+              <DriversFooter/>
+            </div>
+          </div>
+        );
+    }
 }
